@@ -372,6 +372,10 @@
       {{ range .contactItem }}
       <div class="col-lg-4 col-sm-6">
         <div class="contact-info-block text-center mb-4">
+          <a href="{{ .link }}">
+            <span class="span-link"></span>
+          </a>
+        
           <i class="{{ .icon }}"></i>
           <p class="mb-0">{{ .title | markdownify }}</p>
           {{ range .list }}
