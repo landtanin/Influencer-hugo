@@ -37,10 +37,13 @@
 
         {{ if .Site.Params.navButton.enable }}
         {{ "<!-- nav btn -->" | safeHTML }}
-          <button class="snipcart-add-item btn btn-border-tp btn-small ml-3" data-item-id="1"
+          <!-- <button class="snipcart-add-item btn btn-border-tp btn-small ml-3" data-item-id="1"
           data-item-name="{{ .Site.Data.homepage.banner.title | markdownify }}" data-item-image="{{ .Site.Data.homepage.banner.image | absURL }}" data-item-price="{{ .Site.Data.homepage.banner.price }}" data-item-url="/">
           Pre-order
-        </button>
+        </button> -->
+        <a class="btn btn-border-tp btn-small ml-3" href="https://gum.co/LdYdg">
+          Pre-order
+        </a>
         {{ end }}
       </div>
     </div>
