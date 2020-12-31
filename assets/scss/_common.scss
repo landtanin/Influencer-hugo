@@ -76,11 +76,12 @@ Common Styles
     box-shadow: none !important
 }
 
-
 .btn-main {
     border-color: $secondary-color;
     color: $light;
     background: $secondary-color;
+    margin-top: 10px;
+    margin-bottom: 10px;
 
     &:hover {
         background: $primary-color;

@@ -1,5 +1,5 @@
 <footer class="footer">
-  <!-- <div class="container">
+  <div class="container">
     <div class="row justify-content-between align-items-center">
       <div class="col-lg-6 col-sm-12 ">
         <div class="footer-widget">
@@ -7,22 +7,31 @@
             {{ if .Site.Params.logo }}
             <img src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}">
             {{ else }}
-            <h2 class="mb-0 text-dark">{{ .Site.Title }}</h2>
+            <!-- <h2 class="mb-0 text-dark">{{ .Site.Title }}</h2> -->
+            <h2 class="mb-0 text-dark">{{ .Site.Params.description | markdownify }}</h2>
             {{ end }}
           </a>
           <p class="mb-4">{{ .Site.Params.footer.content | markdownify }}</p>
         </div>
       </div>
 
-      <div class="col-lg-6">
-        <div class="subscribe">
+      <div class="col-lg-2 text-center">
+          <img src="{{ `images/about/book.png` | relURL }}" width="160">
+      </div>
+
+      <div class="col-lg-3 align-items-center text-center">
+        <a class="btn btn-main" href="https://gum.co/LdYdg">
+          Pre-order
+        </a>
+        <!-- <div class="subscribe">
           <h4 class="mb-4">Get up to 20% Discount</h4>
           <input type="text" class="form-control mb-4" placeholder="Put your email address">
           <a href="#" class="btn btn-main">Download Now<i class="ti-angle-right ml-3"></i></a>
-        </div>
+        </div> -->
       </div>
     </div>
-  </div> --> 
+    
+  </div> 
 
   <div class="container">
     <div class="row footer-btm mt-5 pt-4 border-top">
